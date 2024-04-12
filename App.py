@@ -3,7 +3,7 @@ from PIL import Image
 import pickle
 
 # Load the RandomForestClassifier model from the pickle file
-pickle_file_path = r'C:/Users/acer/Desktop/DS Grp 10/Model/ML_Model1.pkl'
+pickle_file_path = './ML_Model1.pkl'
 
 with open(pickle_file_path, 'rb') as f:
     model = pickle.load(f)

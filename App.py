@@ -9,6 +9,7 @@ with open(pickle_file_path, 'rb') as f:
     model = pickle.load(f)
 
 def run():
+    st.set_page_config(layout="wide")
    
     html_code = '''
     <div style="display: flex; justify-content: center;">
@@ -20,6 +21,7 @@ def run():
         </figure>
     </div>
     '''
+    
    
     st.markdown("""
     <head>
@@ -82,8 +84,6 @@ def run():
         </ul>
     </body>
     """, unsafe_allow_html=True)
-
-    st.set_page_config(layout="wide")
 
     image_path = "./bg.jpg"  # Assuming bg.jpg is in the same directory as your script
     img1 = Image.open(image_path)

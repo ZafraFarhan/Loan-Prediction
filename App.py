@@ -9,20 +9,14 @@ with open(pickle_file_path, 'rb') as f:
     model = pickle.load(f)
 
 def run():
-    html_code = '''
-    <div style="display: flex; justify-content: center;">
-        <figure class="image image_resized" style="width:27.25%;" data-ckbox-resource-id="nHstcTPQGd7c">
-            <picture>
-                <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.webp 472w" type="image/webp" sizes="(max-width: 472px) 100vw, 472px"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.png" width="472" height="162">
-            </picture>
-        </figure>
-    </div>
+   html_code = '''
+    <figure class="image image_resized" style="width:38.38%;" data-ckbox-resource-id="pExlLCMgCXOw">
+        <picture>
+            <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/480.webp 480w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/560.webp 560w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/640.webp 640w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/647.webp 647w" sizes="(max-width: 647px) 100vw, 647px" type="image/webp"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/647.png" width="647" height="161">
+        </picture>
+    </figure>
     '''
-
-
-    
-
-
+    st.markdown(html_code, unsafe_allow_html=True)
 
     # User inputs
     fn = st.text_input("First Name")

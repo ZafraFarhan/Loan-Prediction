@@ -80,8 +80,8 @@ def run():
     </body>
     """, unsafe_allow_html=True)
 
-    
-    st.image(bg.jpg, use_column_width=True, height=100)
+    img="./bg.jpg"
+    st.image(img, use_column_width=True, height=100)
 
 
 

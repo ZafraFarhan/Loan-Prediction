@@ -12,15 +12,11 @@ def run():
     #st.markdown("<h1 style='text-align: center; font-size: 80px; font-family: Comic Sans MS;'>FinLoan</h1>", unsafe_allow_html=True)
     #st.markdown("<h2 style='text-align: center; font-size: 15px; font-family: Suez One; font-weight: bold;'>Empowering Your Financial Journey</h2>", unsafe_allow_html=True)
 
-    html_code = '''
-    <div style="display: flex; justify-content: center;">
-        <figure class="image image_resized" style="width:27.25%;" data-ckbox-resource-id="nHstcTPQGd7c">
-            <picture>
-                <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.webp 472w" type="image/webp" sizes="(max-width: 472px) 100vw, 472px"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.png" width="472" height="162">
-            </picture>
-        </figure>
-    </div>
-    '''
+   <figure class="image image_resized" style="width:25.33%;" data-ckbox-resource-id="B0ngPMXYYKTE">
+        <picture>
+            <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/B0ngPMXYYKTE/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/B0ngPMXYYKTE/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/B0ngPMXYYKTE/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/B0ngPMXYYKTE/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/B0ngPMXYYKTE/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/B0ngPMXYYKTE/images/415.webp 415w" sizes="(max-width: 415px) 100vw, 415px" type="image/webp"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/B0ngPMXYYKTE/images/415.png" width="415" height="122">
+        </picture>
+    </figure>
 
     st.markdown(html_code, unsafe_allow_html=True)
     #img1 = Image.open('H1.png')

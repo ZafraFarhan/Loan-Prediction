@@ -18,17 +18,18 @@ def run():
     '''
     st.markdown(html_code, unsafe_allow_html=True)
 
-    image_links = [
-        ("HOME.png", "https://aashafathima1.wixsite.com/finloan"),
-        ("ABOUT US.png", "https://aashafathima1.wixsite.com/finloan/about"),
-        ("REQUEST LOAN.png", "https://aashafathima1.wixsite.com/finloan/copy-of-about-us")
+    links = [
+        ("Home", "https://aashafathima1.wixsite.com/finloan"),
+        ("About Us", "https://aashafathima1.wixsite.com/finloan/about"),
+        ("Request Loan", "https://aashafathima1.wixsite.com/finloan/copy-of-about-us")
     ]
 
-    # Display images and make them clickable
-    cols = st.columns(4)
-    for i, (image_url, link_url) in enumerate(image_links):
+    # Display text links
+    cols = st.columns(len(links))
+    for i, (text, link_url) in enumerate(links):
         with cols[i]:
-            st.markdown(f"<a href='{link_url}' target='_blank'><img src='{image_url}' width='150'></a>", unsafe_allow_html=True)
+            st.markdown(f"<a href='{link_url}' target='_blank'>{text}</a>", unsafe_allow_html=True)
+
 
 
     # User inputs

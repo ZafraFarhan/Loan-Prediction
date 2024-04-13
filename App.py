@@ -52,7 +52,7 @@ def run():
 
     debt = st.number_input('Monthly Debt',value='')
 
-    crdt_years = st.number_input('Years of Credit History'value='')
+    crdt_years = st.number_input('Years of Credit History',value='')
 
     opnAcc = st.number_input('No. of Open Accounts', value=0)
 

@@ -12,7 +12,7 @@ def run():
     #st.markdown("<h1 style='text-align: center; font-size: 80px; font-family: Comic Sans MS;'>FinLoan</h1>", unsafe_allow_html=True)
     #st.markdown("<h2 style='text-align: center; font-size: 15px; font-family: Suez One; font-weight: bold;'>Empowering Your Financial Journey</h2>", unsafe_allow_html=True)
 
-   html_code = '''
+    html_code = '''
     <div style="display: flex; justify-content: center;">
         <figure class="image image_resized" style="width:27.25%;" data-ckbox-resource-id="nHstcTPQGd7c">
             <picture>

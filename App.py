@@ -18,6 +18,20 @@ def run():
     '''
     st.markdown(html_code, unsafe_allow_html=True)
 
+     image_links = [
+        ("https://example.com/image1.jpg", "https://www.example.com/page1"),
+        ("https://example.com/image2.jpg", "https://www.example.com/page2"),
+        ("https://example.com/image3.jpg", "https://www.example.com/page3"),
+        ("https://example.com/image4.jpg", "https://www.example.com/page4")
+    ]
+
+    # Display images and make them clickable
+    cols = st.columns(4)
+    for i, (image_url, link_url) in enumerate(image_links):
+        with cols[i]:
+            st.markdown(f"<a href='{link_url}' target='_blank'><img src='{image_url}' width='150'></a>", unsafe_allow_html=True)
+
+
     # User inputs
     fn = st.text_input("First Name")
 

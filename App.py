@@ -13,13 +13,16 @@ def run():
     #st.markdown("<h2 style='text-align: center; font-size: 15px; font-family: Suez One; font-weight: bold;'>Empowering Your Financial Journey</h2>", unsafe_allow_html=True)
 
     html_code = '''
-    <figure class="image image_resized" style="width:27.25%;" data-ckbox-resource-id="nHstcTPQGd7c">
-        <picture>
-            <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.webp 472w" type="image/webp" sizes="(max-width: 472px) 100vw, 472px"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.png" width="472" height="162">
-        </picture>
-    </figure>
+    <div style="display: flex; justify-content: center;">
+        <figure class="image image_resized" style="width:27.25%;" data-ckbox-resource-id="nHstcTPQGd7c">
+            <picture>
+                <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.webp 472w" type="image/webp" sizes="(max-width: 472px) 100vw, 472px"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.png" width="472" height="162">
+            </picture>
+        </figure>
+    </div>
     '''
-    st.markdown(html_code, unsafe_allow_html=True)
+
+st.markdown(html_code, unsafe_allow_html=True)
     #img1 = Image.open('H1.png')
     #img1 = img1.resize((156,145))
     #st.image(img1, use_column_width=False)

@@ -92,53 +92,71 @@ def run():
 
 
     # User inputs
-    fn = st.text_input("First Name")
 
-    loan_amt_str = st.text_input("Loan Amount ($)",value='')
-    loan_amt = int(loan_amt_str) if loan_amt_str else None
+    col1, col2, col3 = st.columns(3)
 
+    with col1:
+        fn = st.text_input("First Name")
 
-    loanType_display = ('Personal Loan','Business Loan','House Loan','Debt Consolidation','Other')  
-    loanType_options = list(range(len(loanType_display)))
-    loanType = st.selectbox("Loan Purpose", loanType_options, format_func=lambda x: loanType_display[x])
+    with col2:
+        loan_amt_str = st.text_input("Loan Amount ($)",value='')
+        loan_amt = int(loan_amt_str) if loan_amt_str else None
 
-    term_display = ('Short Term','Long Term')
-    term_options = list(range(len(term_display)))
-    term = st.selectbox("Term", term_options, format_func=lambda x: term_display[x])
+    with col3:
+        loanType_display = ('Personal Loan','Business Loan','House Loan','Debt Consolidation','Other')  
+        loanType_options = list(range(len(loanType_display)))
+        loanType = st.selectbox("Loan Purpose", loanType_options, format_func=lambda x: loanType_display[x])
 
-    crdt_scr_str = st.text_input('Credit Score',value='')
-    crdt_scr = int(crdt_scr_str) if crdt_scr_str else None
+    with col1:
+        term_display = ('Short Term','Long Term')
+        term_options = list(range(len(term_display)))
+        term = st.selectbox("Term", term_options, format_func=lambda x: term_display[x])
 
-    annual_incm_str = st.text_input('Annual Income ($)',value='')
-    annual_incm = int(annual_incm_str) if annual_incm_str else None
+    with col2:
+        crdt_scr_str = st.text_input('Credit Score',value='')
+        crdt_scr = int(crdt_scr_str) if crdt_scr_str else None
 
-    exprnc_display = ('<3 years','3-6 years','7-9 years','10+ years')
-    exprnc_options = list(range(len(exprnc_display)))
-    exprnc = st.selectbox("Years of Experience", exprnc_options, format_func=lambda x: exprnc_display[x])
+    with col3:
+        annual_incm_str = st.text_input('Annual Income ($)',value='')
+        annual_incm = int(annual_incm_str) if annual_incm_str else None
 
-    home_display = ('Home Mortgage','Rent','Own Home','Have Mortgage')
-    home_options = list(range(len(home_display)))
-    home = st.selectbox("Home Ownership",  home_options, format_func=lambda x: home_display[x])
+    with col1:
+        exprnc_display = ('<3 years','3-6 years','7-9 years','10+ years')
+        exprnc_options = list(range(len(exprnc_display)))
+        exprnc = st.selectbox("Years of Experience", exprnc_options, format_func=lambda x: exprnc_display[x])
 
-    debt_str = st.text_input('Monthly Debt',value='')
-    debt = int(debt_str) if debt_str else None
+    with col2:
+        home_display = ('Home Mortgage','Rent','Own Home','Have Mortgage')
+        home_options = list(range(len(home_display)))
+        home = st.selectbox("Home Ownership",  home_options, format_func=lambda x: home_display[x])
 
-    crdt_years_str = st.text_input('Years of Credit History',value='')
-    crdt_years = int(crdt_years_str) if crdt_years_str else None
+    with col3:
+        debt_str = st.text_input('Monthly Debt',value='')
+        debt = int(debt_str) if debt_str else None
 
-    opnAcc = st.number_input('No. of Open Accounts', value=0)
+    with col1:
+        crdt_years_str = st.text_input('Years of Credit History',value='')
+        crdt_years = int(crdt_years_str) if crdt_years_str else None
 
-    crdtPrb = st.number_input('No. of Credit Problems', value=0)
+    with col2:
+        opnAcc = st.number_input('No. of Open Accounts', value=0)
 
-    crdtBal_str = st.text_input('Current Credit Balance',value='')
-    crdtBal = int(crdtBal_str) if crdtBal_str else None
+    with col3:
+        crdtPrb = st.number_input('No. of Credit Problems', value=0)
 
-    maxOpenCredt_str = st.text_input('Max Open Credit',value='')
-    maxOpenCredt = int(maxOpenCredt_str) if maxOpenCredt_str else None
+    with col1:
+        crdtBal_str = st.text_input('Current Credit Balance',value='')
+        crdtBal = int(crdtBal_str) if crdtBal_str else None
 
-    bankruptcy = st.number_input('Bankruptcies', value=0)
+    with col2:
+        maxOpenCredt_str = st.text_input('Max Open Credit',value='')
+        maxOpenCredt = int(maxOpenCredt_str) if maxOpenCredt_str else None
 
-    taxLien = st.number_input('Tax Liens', value=0)
+    with col3:
+        bankruptcy = st.number_input('Bankruptcies', value=0)
+
+    with col1:
+        taxLien = st.number_input('Tax Liens', value=0)
     
     
     if st.button("Submit"):

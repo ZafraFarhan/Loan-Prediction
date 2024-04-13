@@ -12,9 +12,17 @@ def run():
     #st.markdown("<h1 style='text-align: center; font-size: 80px; font-family: Comic Sans MS;'>FinLoan</h1>", unsafe_allow_html=True)
     #st.markdown("<h2 style='text-align: center; font-size: 15px; font-family: Suez One; font-weight: bold;'>Empowering Your Financial Journey</h2>", unsafe_allow_html=True)
 
-    img1 = Image.open('H1.png')
-    img1 = img1.resize((156,145))
-    st.image(img1, use_column_width=False)
+    html_code = '''
+    <figure class="image" data-ckbox-resource-id="HK0qhsm-WJjq">
+        <picture>
+            <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/472.webp 472w" sizes="(max-width: 472px) 100vw, 472px" type="image/webp"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/472.png" width="472" height="162">
+        </picture>
+    </figure>
+    '''
+    st.markdown(html_code, unsafe_allow_html=True)
+    #img1 = Image.open('H1.png')
+    #img1 = img1.resize((156,145))
+    #st.image(img1, use_column_width=False)
     st.title("Bank Loan Prediction")
 
     # User inputs

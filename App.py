@@ -9,6 +9,7 @@ with open(pickle_file_path, 'rb') as f:
     model = pickle.load(f)
 
 def run():
+    st.set_page_config(layout="wide")
     html_code = '''
     <figure class="image image_resized" style="width:38.38%;" data-ckbox-resource-id="pExlLCMgCXOw">
         <picture>

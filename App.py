@@ -72,10 +72,10 @@ def run():
     st.markdown("""
     <body>
         <ul class="nav-links">
-            <li><a href="#">Dashboard</a></li>
-            <li class="center"><a href="#">Portfolio</a></li>
-            <li class="upward"><a href="#">Services</a></li>
-            <li class="forward"><a href="#">Feedback</a></li>
+            <li><a href="https://aashafathima1.wixsite.com/finloan">HOME</a></li>
+            <li class="center"><a href="https://aashafathima1.wixsite.com/finloan/about">ABOUT US</a></li>
+            <li class="upward"><a href="https://aashafathima1.wixsite.com/finloan/copy-of-about-us">REQUEST LOAN</a></li>
+            <li class="forward"><a href="#">APPROVAL STATUS</a></li>
         </ul>
     </body>
     """, unsafe_allow_html=True)

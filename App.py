@@ -85,7 +85,7 @@ def run():
     </body>
     """, unsafe_allow_html=True)
 
-    image_path = "./bg.jpg"  # Assuming bg.jpg is in the same directory as your script
+    image_path = "./BG.png"  # Assuming bg.jpg is in the same directory as your script
     img1 = Image.open(image_path)
     #img1 = img1.resize((80, 50), Image.BICUBIC)  # Use BICUBIC filter for better quality
     st.image(img1, use_column_width=True)

@@ -12,7 +12,7 @@ def run():
     st.set_page_config(layout="wide")
    
     html_code = '''
-    <figure class="image image_resized" style="width:38.38%;" data-ckbox-resource-id="pExlLCMgCXOw">
+    <figure class="image image_resized" style="width:38.38%; margin: 0 auto;" data-ckbox-resource-id="pExlLCMgCXOw">
         <picture>
             <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/480.webp 480w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/560.webp 560w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/640.webp 640w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/647.webp 647w" sizes="(max-width: 647px) 100vw, 647px" type="image/webp">
             <img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/647.png" style="width: 100%; max-width: 100%;" height="161">

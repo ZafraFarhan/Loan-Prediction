@@ -93,7 +93,7 @@ def run():
 
     # User inputs
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
 
     with col1:
         fn = st.text_input("First Name")
@@ -102,21 +102,21 @@ def run():
         loan_amt_str = st.text_input("Loan Amount ($)",value='')
         loan_amt = int(loan_amt_str) if loan_amt_str else None
 
-    with col3:
+    with col1:
         loanType_display = ('Personal Loan','Business Loan','House Loan','Debt Consolidation','Other')  
         loanType_options = list(range(len(loanType_display)))
         loanType = st.selectbox("Loan Purpose", loanType_options, format_func=lambda x: loanType_display[x])
 
-    with col1:
+    with col2:
         term_display = ('Short Term','Long Term')
         term_options = list(range(len(term_display)))
         term = st.selectbox("Term", term_options, format_func=lambda x: term_display[x])
 
-    with col2:
+    with col1:
         crdt_scr_str = st.text_input('Credit Score',value='')
         crdt_scr = int(crdt_scr_str) if crdt_scr_str else None
 
-    with col3:
+    with col2:
         annual_incm_str = st.text_input('Annual Income ($)',value='')
         annual_incm = int(annual_incm_str) if annual_incm_str else None
 
@@ -130,18 +130,18 @@ def run():
         home_options = list(range(len(home_display)))
         home = st.selectbox("Home Ownership",  home_options, format_func=lambda x: home_display[x])
 
-    with col3:
+    with col1:
         debt_str = st.text_input('Monthly Debt',value='')
         debt = int(debt_str) if debt_str else None
 
-    with col1:
+    with col2:
         crdt_years_str = st.text_input('Years of Credit History',value='')
         crdt_years = int(crdt_years_str) if crdt_years_str else None
 
-    with col2:
+    with col1:
         opnAcc = st.number_input('No. of Open Accounts', value=0)
 
-    with col3:
+    with col2:
         crdtPrb = st.number_input('No. of Credit Problems', value=0)
 
     with col1:
@@ -152,10 +152,10 @@ def run():
         maxOpenCredt_str = st.text_input('Max Open Credit',value='')
         maxOpenCredt = int(maxOpenCredt_str) if maxOpenCredt_str else None
 
-    with col3:
+    with col1:
         bankruptcy = st.number_input('Bankruptcies', value=0)
 
-    with col1:
+    with col2:
         taxLien = st.number_input('Tax Liens', value=0)
     
     

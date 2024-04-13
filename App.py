@@ -81,7 +81,7 @@ def run():
     """, unsafe_allow_html=True)
 
     img1 = Image.open('bg.jpg')
-    img1 = img1.resize((80,215))
+    img1 = img1.resize((80,50))
     st.image(img1,use_column_width=True)
 
 

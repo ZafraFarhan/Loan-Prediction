@@ -18,8 +18,13 @@ def run():
             <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/480.webp 480w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/560.webp 560w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/640.webp 640w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/647.webp 647w" sizes="(max-width: 647px) 100vw, 647px" type="image/webp"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/647.png" width="647" height="161">
         </picture>
     </figure>
-    '''
 
+    <figure class="image image-style-align-left" data-ckbox-resource-id="4lGrLc8Alfwn"><a href="https://aashafathima1.wixsite.com/loan-prediction-1" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/4lGrLc8Alfwn/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/4lGrLc8Alfwn/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/4lGrLc8Alfwn/images/187.webp 187w" sizes="(max-width: 187px) 100vw, 187px" type="image/webp"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/4lGrLc8Alfwn/images/187.png" width="187" height="51">
+        </picture>
+    </a></figure>
+    '''
 
     st.markdown(html_code, unsafe_allow_html=True)
     #img1 = Image.open('H1.png')

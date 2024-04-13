@@ -19,7 +19,10 @@ def run():
     </style>
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
-    
+
+    st.markdown("<h1 style='text-align: center; font-size: 80px; font-family: Comic Sans MS;'>FinLoan</h1>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; font-size: 15px; font-family: Suez One; font-weight: bold;'>Empowering Your Financial Journey</h2>", unsafe_allow_html=True)
+
     img1 = Image.open('bank.png')
     img1 = img1.resize((156,145))
     st.image(img1, use_column_width=False)

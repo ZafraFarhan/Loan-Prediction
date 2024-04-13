@@ -15,7 +15,7 @@ def run():
     html_code = '''
     <figure class="image" data-ckbox-resource-id="HK0qhsm-WJjq">
         <picture>
-            <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/472.webp 472w" sizes="(max-width: 472px) 100vw, 472px" type="image/webp"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/HK0qhsm-WJjq/images/472.png" width="472" height="162">
+            <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.webp 472w" type="image/webp" sizes="(max-width: 472px) 100vw, 472px"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.png" width="472" height="162">        
         </picture>
     </figure>
     '''

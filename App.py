@@ -40,10 +40,10 @@ def run():
     term_options = list(range(len(term_display)))
     term = st.selectbox("Term", term_options, format_func=lambda x: term_display[x])
 
-    crdt_scr = st.text_input('Credit Score',value='')
+    crdt_scr_str = st.text_input('Credit Score',value='')
     crdt_scr = int(crdt_scr_str) if crdt_scr_str else None
 
-    annual_incm = st.number_input('Annual Income ($)',value='')
+    annual_incm_str = st.number_input('Annual Income ($)',value='')
     annual_incm = int(annual_incm_str) if annual_incm_str else None
 
     exprnc_display = ('<3 years','3-6 years','7-9 years','10+ years')

@@ -9,18 +9,7 @@ with open(pickle_file_path, 'rb') as f:
     model = pickle.load(f)
 
 def run():
-    # Set background image
-    page_bg_img = '''
-    <style>
-    body {
-    background-image: url("C:/Users/acer/Desktop/DS Grp 10/background.jpg");
-    background-size: cover;
-    }
-    </style>
-    '''
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-
-    st.markdown("<h1 style='text-align: center; font-size: 80px; font-family: Comic Sans MS;'>FinLoan</h1>", unsafe_allow_html=True)
+     st.markdown("<h1 style='text-align: center; font-size: 80px; font-family: Comic Sans MS;'>FinLoan</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center; font-size: 15px; font-family: Suez One; font-weight: bold;'>Empowering Your Financial Journey</h2>", unsafe_allow_html=True)
 
     img1 = Image.open('bank.png')

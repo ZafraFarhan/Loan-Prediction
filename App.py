@@ -28,7 +28,7 @@ def run():
     # User inputs
     fn = st.text_input("First Name")
 
-    loan_amt = st.number_input("Loan Amount ($)")
+    loan_amt = st.number_input("Loan Amount ($)",value='')
 
     loanType_display = ('Personal Loan','Business Loan','House Loan','Debt Consolidation','Other')  
     loanType_options = list(range(len(loanType_display)))
@@ -38,9 +38,9 @@ def run():
     term_options = list(range(len(term_display)))
     term = st.selectbox("Term", term_options, format_func=lambda x: term_display[x])
 
-    crdt_scr = st.number_input('Credit Score')
+    crdt_scr = st.number_input('Credit Score',value='')
 
-    annual_incm = st.number_input('Annual Income ($)')
+    annual_incm = st.number_input('Annual Income ($)',value='')
 
     exprnc_display = ('<3 years','3-6 years','7-9 years','10+ years')
     exprnc_options = list(range(len(exprnc_display)))
@@ -50,17 +50,17 @@ def run():
     home_options = list(range(len(home_display)))
     home = st.selectbox("Home Ownership",  home_options, format_func=lambda x: home_display[x])
 
-    debt = st.number_input('Monthly Debt')
+    debt = st.number_input('Monthly Debt',value='')
 
-    crdt_years = st.number_input('Years of Credit History')
+    crdt_years = st.number_input('Years of Credit History'value='')
 
     opnAcc = st.number_input('No. of Open Accounts', value=0)
 
     crdtPrb = st.number_input('No. of Credit Problems', value=0)
 
-    crdtBal = st.number_input('Current Credit Balance',)
+    crdtBal = st.number_input('Current Credit Balance',value='')
 
-    maxOpenCredt = st.number_input('Max Open Credit')
+    maxOpenCredt = st.number_input('Max Open Credit',value='')
 
     bankruptcy = st.number_input('Bankruptcies', value=0)
 

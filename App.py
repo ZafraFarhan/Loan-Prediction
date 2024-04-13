@@ -18,17 +18,67 @@ def run():
     '''
     st.markdown(html_code, unsafe_allow_html=True)
 
-    links = [
-        ("Home", "https://aashafathima1.wixsite.com/finloan"),
-        ("About Us", "https://aashafathima1.wixsite.com/finloan/about"),
-        ("Request Loan", "https://aashafathima1.wixsite.com/finloan/copy-of-about-us")
-    ]
+    st.markdown("""
+    <head>
+        <meta charset="UTF-8">
+        <title>All Navigation Menu Hover Animation | CodingLab</title> 
+        <style>
+            .nav-links {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+            }
+            .nav-links li {
+                position: relative;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+            .nav-links li a {
+                color: #000;
+                text-decoration: none;
+            }
+            .center::after, .upward::after, .forward::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: -5px;
+                left: 0;
+                background-color: #000;
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
+            }
+            .center::after {
+                transform-origin: center;
+            }
+            .upward::after {
+                transform-origin: bottom;
+            }
+            .forward::after {
+                transform-origin: top right;
+            }
+            .nav-links li:hover::after {
+                transform: scaleX(1);
+            }
+        </style>
+    </head>
+    """, unsafe_allow_html=True)
 
-    # Display text links
-    cols = st.columns(len(links))
-    for i, (text, link_url) in enumerate(links):
-        with cols[i]:
-            st.markdown(f"<a href='{link_url}' target='_blank'>{text}</a>", unsafe_allow_html=True)
+    st.markdown("""
+    <body>
+        <ul class="nav-links">
+            <li><a href="#">Dashboard</a></li>
+            <li class="center"><a href="#">Portfolio</a></li>
+            <li class="upward"><a href="#">Services</a></li>
+            <li class="forward"><a href="#">Feedback</a></li>
+        </ul>
+    </body>
+    """, unsafe_allow_html=True)
 
 
 

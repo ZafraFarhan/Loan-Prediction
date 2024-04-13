@@ -19,10 +19,9 @@ def run():
     st.markdown(html_code, unsafe_allow_html=True)
 
     image_links = [
-        ("https://example.com/image1.jpg", "https://www.example.com/page1"),
-        ("https://example.com/image2.jpg", "https://www.example.com/page2"),
-        ("https://example.com/image3.jpg", "https://www.example.com/page3"),
-        ("https://example.com/image4.jpg", "https://www.example.com/page4")
+        ("./HOME.png", "https://aashafathima1.wixsite.com/finloan"),
+        ("./ABOUT US.png", "https://aashafathima1.wixsite.com/finloan/about"),
+        ("./REQUEST LOAN.png", "https://aashafathima1.wixsite.com/finloan/copy-of-about-us")
     ]
 
     # Display images and make them clickable

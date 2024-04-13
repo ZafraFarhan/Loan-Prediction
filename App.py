@@ -40,9 +40,11 @@ def run():
     term_options = list(range(len(term_display)))
     term = st.selectbox("Term", term_options, format_func=lambda x: term_display[x])
 
-    crdt_scr = st.number_input('Credit Score',value='')
+    crdt_scr = st.text_input('Credit Score',value='')
+    crdt_scr = int(crdt_scr_str) if crdt_scr_str else None
 
     annual_incm = st.number_input('Annual Income ($)',value='')
+    annual_incm = int(annual_incm_str) if annual_incm_str else None
 
     exprnc_display = ('<3 years','3-6 years','7-9 years','10+ years')
     exprnc_options = list(range(len(exprnc_display)))
@@ -52,17 +54,21 @@ def run():
     home_options = list(range(len(home_display)))
     home = st.selectbox("Home Ownership",  home_options, format_func=lambda x: home_display[x])
 
-    debt = st.number_input('Monthly Debt',value='')
+    debt_str = st.text_input('Monthly Debt',value='')
+    debt = int(debt_str) if debt_str else None
 
-    crdt_years = st.number_input('Years of Credit History',value='')
+    crdt_years_str = st.text_input('Years of Credit History',value='')
+    crdt_years = int(crdt_years_str) if crdt_years_str else None
 
     opnAcc = st.number_input('No. of Open Accounts', value=0)
 
     crdtPrb = st.number_input('No. of Credit Problems', value=0)
 
-    crdtBal = st.number_input('Current Credit Balance',value='')
+    crdtBal_str = st.text_input('Current Credit Balance',value='')
+    crdtBal = int(crdtBal_str) if crdtBal_str else None
 
-    maxOpenCredt = st.number_input('Max Open Credit',value='')
+    maxOpenCredt_str = st.text_input('Max Open Credit',value='')
+    maxOpenCredt = int(maxOpenCredt_str) if maxOpenCredt_str else None
 
     bankruptcy = st.number_input('Bankruptcies', value=0)
 

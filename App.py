@@ -29,7 +29,7 @@ def run():
     fn = st.text_input("First Name")
 
     loan_amt_str = st.text_input("Loan Amount ($)",value='')
-    loan_amt_str = int(loan_amt_str) if loan_amt_str else None
+    loan_amt = int(loan_amt_str) if loan_amt_str else None
 
 
     loanType_display = ('Personal Loan','Business Loan','House Loan','Debt Consolidation','Other')  

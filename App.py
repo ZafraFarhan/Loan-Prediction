@@ -10,20 +10,12 @@ with open(pickle_file_path, 'rb') as f:
 
 def run():
     html_code = '''
-    <div>
-        <figure class="image image_resized" style="width:38.38%;" data-ckbox-resource-id="pExlLCMgCXOw">
+    <div style="display: flex; justify-content: center;">
+        <figure class="image image_resized" style="width:27.25%;" data-ckbox-resource-id="nHstcTPQGd7c">
             <picture>
-                <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/480.webp 480w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/560.webp 560w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/640.webp 640w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/647.webp 647w" sizes="(max-width: 647px) 100vw, 647px" type="image/webp"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/pExlLCMgCXOw/images/647.png" width="647" height="161">
+                <source srcset="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/80.webp 80w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/160.webp 160w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/240.webp 240w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/320.webp 320w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/400.webp 400w,https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.webp 472w" type="image/webp" sizes="(max-width: 472px) 100vw, 472px"><img src="https://ckbox.cloud/509c9c1f11e549c80adc/assets/nHstcTPQGd7c/images/472.png" width="472" height="162">
             </picture>
         </figure>
-        <nav style="margin-top: 10px;">
-            <ul style="list-style-type: none; padding: 0; display: flex; justify-content: space-around;">
-                <li style="margin-right: 20px;"><a href="https://aashafathima1.wixsite.com/finloan">Home</a></li>
-                <li style="margin-right: 20px;"><a href="https://aashafathima1.wixsite.com/finloan/about-us">About Us</a></li>
-                <li style="margin-right: 20px;"><a href="https://aashafathima1.wixsite.com/finloan/copy-of-about-us">Request Loan</a></li>
-                <li><a href="https://loan-prediction-cctzcfxv4nafgqyegjwgsb.streamlit.app/#finloan">Approval Status</a></li>
-            </ul>
-        </nav>
     </div>
     '''
 

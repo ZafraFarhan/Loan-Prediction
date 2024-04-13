@@ -80,10 +80,9 @@ def run():
     </body>
     """, unsafe_allow_html=True)
 
-    
-    image = Image.open('./bg.jpg')
-    st.image(image, use_column_width=True, height=100)
-
+    img1 = Image.open('bg.jpg')
+    img1 = img1.resize((156,145))
+    st.image(img1,use_column_width=True)
 
 
     # User inputs

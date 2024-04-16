@@ -137,28 +137,12 @@ def run():
         crdt_years = int(crdt_years_str) if crdt_years_str else None
 
     with col1:
-        opnAcc = st.number_input('No. of Open Accounts', value=0)
-
-    with col2:
-        crdtPrb = st.number_input('No. of Credit Problems', value=0)
-
-    with col1:
-        crdtBal_str = st.text_input('Current Credit Balance',value='')
-        crdtBal = int(crdtBal_str) if crdtBal_str else None
-
-    with col2:
         maxOpenCredt_str = st.text_input('Max Open Credit',value='')
         maxOpenCredt = int(maxOpenCredt_str) if maxOpenCredt_str else None
-
-    with col1:
-        bankruptcy = st.number_input('Bankruptcies', value=0)
-
-    with col2:
-        taxLien = st.number_input('Tax Liens', value=0)
-    
     
     if st.button("Submit"):
-        features = [[loan_amt, loanType, term, crdt_scr, annual_incm, exprnc, home, debt, crdt_years, opnAcc, crdtPrb, crdtBal, maxOpenCredt, bankruptcy, taxLien]]
+        dti = debt/(annual_incm/12)
+        features = [[loan_amt, term, crdt_scr, exprnc, home, maxOpenCredt, dti]]
         prediction = model.predict(features)
         
         if prediction == 0:

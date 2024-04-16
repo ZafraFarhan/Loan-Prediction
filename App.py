@@ -155,5 +155,25 @@ def run():
                 "Hello: " + fn + " || "
                 "Congratulations!! You will get the loan from the bank."
             )
+    if st.button("Reset"):
+    # Reset all user inputs
+    loan_amt = None
+    term = None
+    crdt_scr = None
+    exprnc = None
+    home = None
+    maxOpenCredt = None
+    debt = None
+    annual_incm = None
+    # Clear the input fields
+    st.text_input("First Name", value='', key='first_name')
+    st.text_input("Loan Amount ($)", value='', key='loan_amt')
+    st.selectbox("Term", term_options, key='term')
+    st.text_input('Credit Score', value='', key='crdt_scr')
+    st.selectbox("Years of Experience", exprnc_options, key='exprnc')
+    st.selectbox("Home Ownership", home_options, key='home')
+    st.text_input('Max Open Credit', value='', key='maxOpenCredt')
+    st.text_input('Monthly Debt', value='', key='debt')
+    st.text_input('Annual Income ($)', value='', key='annual_incm')
 
 run()

@@ -165,15 +165,15 @@ def run():
         maxOpenCredt = None
         debt = None
         annual_incm = None
+        
         # Clear the input fields
-        st.text_input("First Name", value='', key='first_name')
-        st.text_input("Loan Amount ($)", value='', key='loan_amt')
-        st.selectbox("Term", term_options, key='term')
-        st.text_input('Credit Score', value='', key='crdt_scr')
-        st.selectbox("Years of Experience", exprnc_options, key='exprnc')
-        st.selectbox("Home Ownership", home_options, key='home')
-        st.text_input('Max Open Credit', value='', key='maxOpenCredt')
-        st.text_input('Monthly Debt', value='', key='debt')
-        st.text_input('Annual Income ($)', value='', key='annual_incm')
+        loan_amt = st.empty()
+        term = st.empty()
+        crdt_scr = st.empty()
+        exprnc = st.empty()
+        home = st.empty()
+        maxOpenCredt = st.empty()
+        debt = st.empty()
+        annual_incm = st.empty()
 
 run()

@@ -167,13 +167,13 @@ def run():
         annual_incm = None
         
         # Clear the input fields
-        loan_amt = st.empty()
-        term = st.empty()
-        crdt_scr = st.empty()
-        exprnc = st.empty()
-        home = st.empty()
-        maxOpenCredt = st.empty()
-        debt = st.empty()
-        annual_incm = st.empty()
+        st.session_state.loan_amt = ""
+        st.session_state.term = ""
+        st.session_state.crdt_scr = ""
+        st.session_state.exprnc = ""
+        st.session_state.home = ""
+        st.session_state.maxOpenCredt = ""
+        st.session_state.debt = ""
+        st.session_state.annual_incm = ""
 
 run()
